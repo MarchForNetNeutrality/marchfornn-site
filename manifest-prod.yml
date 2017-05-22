@@ -1,0 +1,6 @@
+---
+applications:
+- name:      marchfornn-main
+  host:      marchfornn-y2zhd
+  memory:    64M
+  buildpack: https://github.com/cloudfoundry-community/staticfile-buildpack.git

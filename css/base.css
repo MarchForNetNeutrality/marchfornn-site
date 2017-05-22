@@ -1,0 +1,108 @@
+/**************/
+/* Background */
+/**************/
+
+body {
+    background-color: #00609f;
+    background-image: url("../media/bg-march-blue.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.site-body {
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+.text {
+    font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+a.leftside {
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+a.rightside {
+    text-align: right;
+    float: right;
+    margin-right: 5%;
+    color: white;
+}
+.textlarge {
+    font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica';
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.41);
+}
+.textmedium {
+    font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica';
+    color: white;
+    font-size: 60px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.41);
+}
+.header {
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    background: -webkit-linear-gradient(top, rgba(30, 30, 30, 0.4), rgba(255, 255, 255, 0));
+    position: absolute;
+    /*top: 0;*/
+}
+.vertical {
+    vertical-align: middle;
+    display: table-cell;
+}
+@media (max-width: 768px) {
+    .hero {
+        width: 100%;
+    }
+}
+.hero {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.hero-inner {
+    padding: 20px;
+}
+.vertical {
+    vertical-align: middle;
+    display: table-cell;
+}
+.btn-div {
+    margin-top: 50px;
+}
+/***********/
+/* Buttons */
+/***********/
+
+a.btn {
+    background: white;
+    color: #00609f;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.5s;
+}
+a.btn:hover {
+    background-color: #00609f;
+    color: white;
+    transition: 0.5s;
+}
+
+.warning {
+    background: #6f0000;
+    padding: 14px 30px;
+}

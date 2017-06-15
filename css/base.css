@@ -1,29 +1,134 @@
-/**************/
-/* Background */
-/**************/
+
+/* Font Definitions */
+h1 {
+    font-size: 3em;
+}
+
+/* Body */
 
 body {
-    background-color: #00609f;
-    background-image: url("../media/bg-march-blue.jpg");
-    background-size: cover;
+    background-color: #283572;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body.text {
-background-color: #00609f;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/bg-march-blue.jpg');
+
+/* Default Primitives */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid-item {
+    position: relative;
+    margin: 10px;
+}
+
+a {
+    color: #78c6ef;
+}
+
+button {
+    font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    border-color: white;
+    color: #00609f;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 4px;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #00609f;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Objects */
+.warning {
+    background: #6f0000;
+    padding: 14px 30px;
+}
+
+/* Content Blocks*/
+.block {
+    padding: 1px 5%;
+}
+
+.block-hero {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #071930 url("../media/bg-march-blue-dark.jpg");
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
-.site-body {
-    width: 100%;
-    height: 100%;
-    display: table;
-    margin: 0;
-    padding: 0;
+
+#video {
+    text-align: center;
 }
+
+#quotes {
+    padding: 0 12%;
+    text-align: center;
+    font-size: 1.1em;
+}
+#quotes blockquote {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#quotes blockquote::before{
+  content: "\201C";
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+}
+
+#events {
+    padding: 1px 12% 35px;
+    text-align: center;
+    background: #0e203a;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background: black;
+}
+
+#footer img {
+    width: 20px;
+    padding: 0px 2px 0px 2px;
+}
+
+#satellite {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #131313 url("../media/bg-march-black.jpg");
+    background-size: cover;
+}
+
+blockquote.block {}
+
+.hero {
+    text-align: center;
+}
+
 .text {
     font-family: 'Source Sans Pro', 'Fira Sans', 'Helvetica', sans-serif;
     font-weight: 500;
@@ -66,18 +171,6 @@ a.rightside {
     vertical-align: middle;
     display: table-cell;
 }
-@media (max-width: 768px) {
-    .hero {
-        width: 100%;
-    }
-}
-.hero {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .content {
     margin-top: 110px;
     margin-bottom: 110px;
@@ -89,42 +182,8 @@ a.rightside {
 .hero-inner {
     padding: 20px;
 }
-.vertical {
-    vertical-align: middle;
-    display: table-cell;
-}
+
+
 .btn-div {
     margin-top: 50px;
-}
-/***********/
-/* Buttons */
-/***********/
-
-a.btn {
-    background: white;
-    color: #00609f;
-    padding: 10px;
-    width: 50px;
-    border-radius: 5px;
-    margin: 4px;
-    font-size: 18px;
-    text-decoration: none;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    transition: 0.5s;
-}
-a.btn:hover {
-    background-color: #00609f;
-    color: white;
-    transition: 0.5s;
-}
-
-a {
-    color: #00b4ca;
-}
-
-.warning {
-    background: #6f0000;
-    padding: 14px 30px;
 }
